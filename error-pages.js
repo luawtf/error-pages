@@ -9,26 +9,18 @@ const template = (title, text) => `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
 		<title>${title}</title>
-
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> 
-
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 		<style type="text/css">
 			body {
 				display: block;
-
 				position: fixed;
 				left: 0; top: 0; right: 0; bottom: 0;
-
 				margin: 0; padding: 0; border: 0;
-
 				background-color: white;
 				color: black;
-
 				overflow: hidden;
 			}
-
 			table {
 				width: 100%;
 				height: 100%;
@@ -36,18 +28,12 @@ const template = (title, text) => `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 
 			table td {
 				padding: 0;
 			}
-
-			#title {
+			h1 {
 				margin: 0; padding: 0; border: 0;
-
 				text-align: center;
-
 				font-family: "Roboto", sans-serif;
 				font-weight: 900;
 				font-size: 16em;
-			}
-
-			.no-select {
 				-webkit-touch-callout: none;
 				-webkit-user-select: none;
 				-khtml-user-select: none;
@@ -58,13 +44,9 @@ const template = (title, text) => `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 
 		</style>
 	</head>
 	<body>
-		<table>
-			<tr><td></td></tr>
-			<tr><td>
-				<h1 id="title" class="no-select">${text}</h1>
-			</td></tr>
-			<tr><td></td></tr>
-		</table>
+		<table><tr><td>
+			<h1>${text}</h1>
+		</td></tr></table>
 	</body>
 </html>
 `;
